@@ -790,3 +790,19 @@ header {
     background: rgba(0, 0, 0, 0);
     border: 1px solid #000;
 }
+
+.remove-food{
+    font-size: 25px;
+}
+
+.add-food {
+    font-size: 25px;
+}
+
+.order-hr {
+    border: 1px solid white;
+}
+
+.receive-order {
+    font-size: 15px;
+}
