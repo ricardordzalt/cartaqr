@@ -673,15 +673,21 @@ header {
     font-weight: 600;
 }
 
-.delicious-content span {
-    color: #fe7129;
-}
-
 .delicious-content  h3 {
     color: #ebebeb;
     font-weight: 500;
     margin: 20px 0 40px;
 }
+
+.deliciouss-area {
+    position: relative;
+    background-image: url(../img/promo.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    background-attachment: fixed;
+}
+
 /*========== 1 .10 Delicious Area End   ============ */
 
 /*==========  1.13 Footer Area Start   ============*/
