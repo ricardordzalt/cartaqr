@@ -13,11 +13,11 @@ platillo.forEach(item => {
 })
 
 description.forEach(item => {
-    item.addEventListener('click', () => {
+    
         let salir = item.firstChild.nextSibling.firstChild.nextSibling.firstChild.nextSibling
         
         salir.addEventListener('click', () => {
             salir.parentNode.parentNode.parentNode.classList.toggle('desactive')
         })
-    })
+    
 })
