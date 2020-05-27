@@ -66,3 +66,11 @@
 .add, .x {
     cursor: pointer;
 }
+
+/* redes sociales */
+.footer-content {
+    text-align: center;
+}
+.footer-area {
+    padding: 50px 0 !important;
+}
