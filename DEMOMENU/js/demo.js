@@ -34,6 +34,7 @@ function addFood(e) {
 };
 
 function itemCount(item, action) {
+    console.log(item);
     let counterElement = item.querySelector('.item-counter')
     let counter = parseInt(counterElement.textContent);
     action === "add" ? counter++ : counter--;
@@ -43,13 +44,13 @@ function itemCount(item, action) {
 function addItem(item) {
     let name = item.querySelector('h4').textContent;
     const itemMenu = document.createElement('li');
-    itemMenu.setAttribute('class', 'item-list p-2 d-flex justify-content-between');
+    itemMenu.setAttribute('class', 'item-list p-2 d-flex align-items-center justify-content-between');
     itemMenu.innerHTML = `${name}<a href="#" class="remove-from-list mr-4 ml-4 pr-3 pl-3 rounded bg-white">x</a>`;
     cart.appendChild(itemMenu);
 };
 function removeItem(item) {
     let name = item.querySelector('h4').textContent;
-    const itemToRemove = `<li class="item-list p-2 d-flex justify-content-between">${name}<a href="#" class="remove-from-list mr-4 ml-4 pr-3 pl-3 rounded bg-white">x</a></li>`;
+    const itemToRemove = `<li class="item-list p-2 d-flex align-items-center justify-content-between">${name}<a href="#" class="remove-from-list mr-4 ml-4 pr-3 pl-3 rounded bg-white">x</a></li>`;
     let itemsList = itemsUl.html();
     itemsList = itemsList.replace(itemToRemove, "");
     itemsUl.html(itemsList);
