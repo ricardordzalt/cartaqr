@@ -74,9 +74,6 @@ $mail->SMTPOptions = array(
 );
 
 $mail->send(); 
-echo 'Message has been sent';
-
-
 
 }
 catch (Exception $e) {

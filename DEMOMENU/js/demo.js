@@ -34,7 +34,6 @@ function addFood(e) {
 };
 
 function itemCount(item, action) {
-    console.log(item);
     let counterElement = item.querySelector('.item-counter')
     let counter = parseInt(counterElement.textContent);
     action === "add" ? counter++ : counter--;
